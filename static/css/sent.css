@@ -1,0 +1,359 @@
+
+
+
+div {
+  width:200px;
+  height:200px;
+  position:absolute;
+}
+
+.container{
+ 
+  margin-top: 40px;
+  margin-left: 135px;
+  
+ 
+  border-radius: 20px;
+  width: 1020px;
+  height: 500px;
+  background-color:white;
+  border: 1px solid #f47068;
+  z-index:0;/*The z-index is greater than that of the blue box so it is shown first than the red box*/
+
+  left:10px;
+
+  top:10px;
+}
+
+.sentcontainer{
+  width: 1020px;
+  height: 495px;
+  background:#fae1dd;
+  z-index:-1;
+  margin-top: 72px ;
+  margin-left: 160px;
+  border-radius: 20px;
+}
+.senttitle{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
+  margin-left: 45%;
+  color: #1697a6;
+  font-size: 50px;
+  
+
+}
+
+.sentmessage{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
+  margin-left: 34%;
+  color: white;
+  font-size: 30px;
+
+
+}
+
+.form   {
+  
+  width: 400px ;
+  height: 400px;
+  margin-top: -10px;
+  margin-right: 100px;
+  
+  
+  
+ 
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+ 
+
+  
+}
+.form {
+position: relative;
+padding: 15px 0 0;
+;
+
+}
+
+
+
+
+
+.title{
+  margin-top: 85px;
+  margin-left: 70px;
+  color: #1697a6 ;
+  width: 360px;
+  height: 90px;
+ float: left ;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 60px;
+ 
+ 
+  
+
+}
+.text   {
+  color: black;
+  margin-top: 200px;
+  margin-left: 70px ;
+  font-size: 18px;
+
+  
+  width: 360px;
+  height: 100px;
+  float: left;
+
+
+}
+
+.dropdownContent{
+font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+.companyinput:focus ~ .companylabel,
+.companyinput:not(:focus):valid ~ .companylabel{
+top: 20px;
+bottom: 10px;
+left: 10px;
+font-size: 20px;
+opacity: 1;
+}
+
+.companyinput  {
+font-size: 20px;
+width: 400px;
+height: 50px;
+outline: none;
+border: none;
+border-bottom: 2px solid #0e606b;
+margin-top: 30px;
+font-family: 'Montserrat', sans-serif;
+background-color: white;
+}
+
+.companylabel {
+position: absolute;
+pointer-events: none;
+left: 10px;
+top: 55px;
+transition: 0.2s ease all;
+color: grey;
+margin-top: 10px;
+margin-bottom:30px ;
+font-size:25px ;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+.surveyinput:focus ~ .surveylabel,
+.surveyinput:not(:focus):valid ~ .surveylabel{
+top: 15px;
+bottom: 10px;
+left: 10px;
+font-size: 20px;
+opacity: 1;
+}
+
+.surveyinput  {
+font-size: 20px;
+width: 400px;
+height: 50px;
+outline: none;
+border: none;
+border-bottom: 2px solid #0e606b;
+margin-top: 30px;
+font-family: 'Montserrat', sans-serif;
+background-color: white;
+}
+
+.surveylabel {
+position: absolute;
+pointer-events: none;
+left: 10px;
+top: 50px;
+transition: 0.2s ease all;
+color: grey;
+margin-top: 120px;
+margin-bottom:10px ;
+font-size:25px ;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.checkinput:focus ~ .checklabel,
+.checkinput:not(:focus):valid ~ .checklabel{
+top: 90px;
+bottom: 10px;
+left: 10px;
+font-size: 20px;
+opacity: 1;
+}
+
+.checkinput  {
+font-size: 20px;
+width: 400px;
+height: 50px;
+outline: none;
+border: none;
+border-bottom: 2px solid #0e606b;
+margin-top: 30px;
+font-family: 'Montserrat', sans-serif;
+background-color: white;
+}
+
+.checklabel {
+position: absolute;
+pointer-events: none;
+left: 10px;
+top: 125px;
+transition: 0.2s ease all;
+color: grey;
+margin-top: 145px;
+margin-bottom:10px ;
+font-size:25px ;
+font-family: 'Montserrat', sans-serif;
+
+}
+.emailinput:focus ~ .emaillabel,
+.emailinput:not(:focus):valid ~ .emaillabel{
+top: 95px;
+bottom: 10px;
+left: 10px;
+font-size: 20px;
+opacity: 1;
+}
+
+.emailinput  {
+font-size: 20px;
+width: 400px;
+height: 50px;
+outline: none;
+border: none;
+border-bottom: 2px solid #0e606b;
+margin-top: 30px;
+font-family: 'Montserrat', sans-serif;
+background-color: white;
+}
+
+.emaillabel {
+position: absolute;
+pointer-events: none;
+left: 10px;
+top: 130px;
+transition: 0.2s ease all;
+color: grey;
+margin-top: 245px;
+margin-bottom:10px ;
+font-size:25px ;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+.submit {
+border: 1px solid #0e606b;
+background-color: white;
+position: relative;
+width: 170px ;
+height: 30px ;
+margin-left: 109px;
+top: -33px ;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+border-radius: 50px;
+z-index: 2;
+
+
+
+}
+.backbutton{
+position: relative;
+
+
+width: 170px ;
+height: 30px ;
+margin-left: 113px;
+margin-top: 15px;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+border-radius: 50px;
+
+z-index: 1;
+
+background-color: #1697a6;
+
+}
+
+.submit:hover {
+margin-left: 113px;
+margin-top: 3px;
+
+
+}
+
+.alert{
+
+top: 0px;
+left: 0px;
+
+width: 100%;
+height: 100%;
+background-color: rgb(0, 0, 0) ;
+background-color: rgba(0, 0, 0, .4);
+
+text-align: center;
+display: block;
+position: fixed;
+z-index: 1;
+
+}
+
+
+.loading{
+
+
+
+width: 450px;
+height : 200px;
+border: 1px solid #0e606b ;
+background-color: white;
+margin-top: 200px;
+margin-left: 400px;
+border-radius: 20px;
+
+
+}
+.loadingwords{
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+margin-top: 10px;
+margin-left: 120px;
+}
+
+
+
+
+
+.close {
+margin-left: 360px;
+margin-top: 70px;
+color: #f47068;
+font-size: 30px;
+}
+
+.close:hover, .close:focus {
+color: #fae1dd;
+cursor: pointer;
+}
+
+
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+       
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">  
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+   
+
+    <div >
+        <h1 class="title">Quick Survey</h1>
+            <div class="text">
+     <p class="introtext"> Don't throw out your recipts! Look for the code at the top or back of the recipt and put it into <span style=" color: #1697a6;">Quick Survey</span>. We will do all the hard work for you. A voucher for freebies and discounts will be sent directly to your inbox. Submit your code now >>></p>
+    </div> 
+     </div>
+
+
+    <div class="form">
+
+        <form action="{{url_for('sent')}}" method="post" class="forminside">
+            
+            <!-- <input name="company_name" autoComplete="on" list="suggestions" placeholder="Choose your company" class="companyInput"/> -->
+            
+            <datalist id="suggestions" class="dropdownContent">
+                <option>IHOP</option>
+                <option>McDonald's</option>
+            </datalist>
+            <!-- list="suggestions" onchange="myFunction(this.value)" put back into companyinput after you figure it out  -->
+            <input  class="companyinput" list="suggestions" onchange="myFunction(this.value)" id="companyinputid" type="text" name="company_name" required><br> 
+            <label id="companylabelid" class="companylabel">Company:</label><br>
+            
+            <input type="text"  id="surveyinputid" class ="surveyinput" name="survey_name" required><br>
+            <label id="surveylabelid"class="surveylabel">Survey Code:</label><br>
+           
+            <input type="text"  id="checkinputid" class ="checkinput" name="check#_name" required><br>
+            <label id="checklabelid"class="checklabel">Check Code:</label><br>
+           
+
+            <input type="text"  id="emailinputid" class ="emailinput" name="email_name" required><br>
+            <label id="emaillabelid"class="emaillabel">Email:</label><br>
+           
+           
+    
+            <div class="backbutton"></div> 
+            
+            <div>
+                
+                <button id="submitButton" onclick="changeSubmitButton()" class="submit" type="submit" name="button">submit</button>
+                
+            </div>
+            
+            
+            
+            
+
+            
+    
+        </form>
+    </div>
+
+</div>
+
+<div class="sentcontainer">
+    <h1 class="senttitle"> SENT!    </h1>
+    <H2 class="sentmessage">Check your email for freebies</H2>
+
+
+</div>
+
+
+<div>
+
+<div id="myalert" class="alert"> 
+    <div class="loading"> 
+        <span class="close">&times;</span>
+        <div class="loadingwords">
+            Loading
+        </div>
+    </div> 
+</div>
+
+
+</div>
+
+
+
+</body>
+<script src="{{url_for('static', filename='javascript/javascript.js')}}"></script>
+</html>
+
