@@ -18,8 +18,11 @@ def quick_survey_ihop(survey_code, check_number, email):
     check = driver.find_element_by_class_name("coupon-length-12 ")
     survey.send_keys(survey_code)
     check.send_keys(check_number)
-    start = driver.find_element_by_class_name("NextButton")
-    start.click()
+    # start = driver.find_element_by_class_name("NextButton")
+    start = driver.find_element_by_xpath('//*[@id="NextButton"]')
+    driver.execute_script("arguments[0].click();", start)
+    
+    
     highly_satisfied = driver.find_element_by_class_name("radioSimpleInput")
     highly_satisfied.click()
     next_button = driver.find_element_by_id("NextButton")
