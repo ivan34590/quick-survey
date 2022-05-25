@@ -167,42 +167,6 @@ def quick_survey_mcdonalds(survey_code, email):
         validation_code = driver.find_element_by_class_name('ValCode').text
 
 
-
-
-       
-
-
-
-
-    # did_you_purchase_anything_from_the_dollar_menu = driver.find_element_by_xpath('//*[@id="FNSR000329"]/td[2]/label')
-    # did_you_purchase_anything_from_the_dollar_menu.click()
-
-    # next_button = driver.find_element_by_class_name('NextButton')
-    # next_button.click()
-
-    # how_many_times_did_you_vist_mcdonalds_this_month = driver.find_element_by_id('textR020000.2')
-    # how_many_times_did_you_vist_mcdonalds_this_month.click()
-
-    # next_button = driver.find_element_by_class_name('NextButton')
-    # next_button.click()
-
-    # favorite_fast_food_restaurant = driver.find_element_by_id('textR000387.4')
-    # favorite_fast_food_restaurant.click()
-
-    # next_button = driver.find_element_by_class_name('NextButton')
-    # next_button.click()
-
-    # mcdonalds_is_a_brand_i_trust = driver.find_element_by_xpath('//*[@id="FNSR000482"]/td[1]/label')
-    # mcdonalds_is_a_brand_i_trust.click()
-
-    # next_button = driver.find_element_by_class_name('NextButton')
-    # next_button.click()
-    
-    # # next_button = driver.find_element_by_class_name('NextButton')
-    # # next_button.click()
-
-    # validation_code = driver.find_element_by_class_name('ValCode').text
-
     port = 465
     password = "Tacos1284$"
     context = ssl.create_default_context()
